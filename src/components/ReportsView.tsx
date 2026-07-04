@@ -664,13 +664,13 @@ export default function ReportsView({ transaksiList, config, onSyncFromSheet }: 
             <p style={{ marginTop: "5px", fontWeight: "bold" }}>Kepala Sekolah</p>
             <div style={{ height: "60px" }}></div>
             <p style={{ fontWeight: "bold", textDecoration: "underline" }}>( Drs. H. Mulyadi )</p>
-            <p>NIP. 196805121993021003</p>
+            <p>NIP. -</p>
           </div>
           <div style={{ textAlign: "right" }}>
-            <p>Bandung, {new Date().toISOString().split("T")[0]}</p>
+            <p>Cilegon, {new Date().toISOString().split("T")[0]}</p>
             <p style={{ marginTop: "5px", fontWeight: "bold" }}>Kasir / Bendahara Sekolah</p>
             <div style={{ height: "60px" }}></div>
-            <p style={{ fontWeight: "bold", textDecoration: "underline" }}>( {config.penerimaDefault || "Alya Safitri"} )</p>
+            <p style={{ fontWeight: "bold", textDecoration: "underline" }}>( {config.penerimaDefault || "Retno Setia Ningrum"} )</p>
             <p>Administrasi Keuangan</p>
           </div>
         </div>
