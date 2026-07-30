@@ -128,5 +128,4 @@ export const DAFTAR_BULAN = [
   { key: "2027-10", label: "Oktober 2027" },
   { key: "2027-11", label: "November 2027" },
   { key: "2027-12", label: "Desember 2027" }
-  
 ];
