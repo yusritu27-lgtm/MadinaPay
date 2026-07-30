@@ -114,5 +114,19 @@ export const DAFTAR_BULAN = [
   { key: "2026-09", label: "September 2026" },
   { key: "2026-10", label: "Oktober 2026" },
   { key: "2026-11", label: "November 2026" },
-  { key: "2026-12", label: "Desember 2026" }
+  { key: "2026-12", label: "Desember 2026" },
+
+  { key: "2027-01", label: "Januari 2027" },
+  { key: "2027-02", label: "Februari 2027" },
+  { key: "2027-03", label: "Maret 2027" },
+  { key: "2027-04", label: "April 2027" },
+  { key: "2027-05", label: "Mei 2027" },
+  { key: "2027-06", label: "Juni 2027" },
+  { key: "2027-07", label: "Juli 2027" },
+  { key: "2027-08", label: "Agustus 2027" },
+  { key: "2027-09", label: "September 2027" },
+  { key: "2027-10", label: "Oktober 2027" },
+  { key: "2027-11", label: "November 2027" },
+  { key: "2027-12", label: "Desember 2027" }
+  
 ];
