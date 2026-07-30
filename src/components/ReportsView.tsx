@@ -83,7 +83,7 @@ export default function ReportsView({ transaksiList, config, onSyncFromSheet }: 
     { key: "2027-09", label: "September 2027" },
     { key: "2027-10", label: "Oktober 2027" },
     { key: "2027-11", label: "November 2027" },
-    { key: "2027-12", label: "Desember 2027" },
+    { key: "2027-12", label: "Desember 2027" }
   ];
 
   const types = ["Semua", "SPP", "Uang Gedung", "Seragam", "Kegiatan", "Lainnya"];
