@@ -74,7 +74,7 @@ export default function StudentsView({
 
   // Filter lists - dynamically extracted from actual students list, or fallback if empty
   const dynamicClasses = Array.from(new Set(siswaList.map(s => s.kelas))).filter(Boolean).sort();
-  const classes = ["Semua", ...(dynamicClasses.length > 0 ? dynamicClasses : ["X-IPA-1", "X-IPA-2", "X-IPS-1", "XI-IPA-1", "XI-IPA-2", "XI-IPS-1", "XII-IPA-1", "XII-IPS-1"])];
+  const classes = ["Semua", ...(dynamicClasses.length > 0 ? dynamicClasses : ["7A", "7B", "7C", "7D", "8A", "8B", "8C", "8D", "8E", "9A", "9B", "9C", "9D"])];
 
   // Smart CSV parser
   const parseCSV = (text: string) => {
