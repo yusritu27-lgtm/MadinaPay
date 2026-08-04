@@ -1000,7 +1000,7 @@ export default function StudentsView({
                     required
                     value={formKelas}
                     onChange={(e) => setFormKelas(e.target.value)}
-                    placeholder="Contoh: VII-A, XI-RPL-1, XII-IP-1"
+                    placeholder="Contoh: 7A, 8B, 9C"
                     className="w-full px-3.5 py-2.5 bg-white/5 border border-white/10 text-white font-semibold rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-slate-950"
                   />
                 </div>
