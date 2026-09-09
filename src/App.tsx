@@ -522,10 +522,12 @@ export default function App() {
     saveSiswaMaster(updated);
   };
 
-  const handleEditSiswa = (editedSiswa: Siswa) => {
-    const updated = siswaList.map((s) => s.id === editedSiswa.id ? editedSiswa : s);
-    saveSiswaMaster(updated);
-  };
+ const handleEditSiswa = (editedSiswa: Siswa) => {
+  const updated = siswaList.map((s) => 
+    String(s.id) === String(editedSiswa.id) ? editedSiswa : s
+  );
+  saveSiswaMaster(updated);
+};
 
   const handleDeleteSiswa = (id: string) => {
     const updated = siswaList.filter((s) => s.id !== id);
