@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
 interface Siswa {
   id: string;
@@ -11,53 +11,45 @@ interface Siswa {
   teleponOrangTua: string;
 }
 
-const App: React.FC = () => {
-  // Data awal siswa
+const StudentsView: React.FC = () => {
   const [siswaList, setSiswaList] = useState<Siswa[]>([
     {
-      id: "1",
-      nis: "12345",
-      nama: "Budi",
-      kelas: "XII IPA 1",
-      angkatan: "2022",
-      tagihanSpp: 200000,
-      emailOrangTua: "budi@example.com",
-      teleponOrangTua: "08123456789",
+      id: '1',
+      nis: '12345',
+      nama: 'Budi',
+      kelas: 'XII IPA 1',
+      angkatan: '2022',
+      tagihanSpp: 350000,
+      emailOrangTua: 'budi@example.com',
+      teleponOrangTua: '08123456789',
     },
   ]);
-
-  // State untuk modal tambah/edit
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalMode, setModalMode] = useState<'add' | 'edit'>('add');
   const [formData, setFormData] = useState<Partial<Siswa>>({});
 
-  // Fungsi untuk membuka modal tambah
   const handleOpenAdd = () => {
     setFormData({});
     setModalMode('add');
     setIsModalOpen(true);
   };
 
-  // Fungsi untuk membuka modal edit
   const handleOpenEdit = (siswa: Siswa) => {
     setFormData(siswa);
     setModalMode('edit');
     setIsModalOpen(true);
   };
 
-  // Fungsi untuk menambah data siswa
   const handleAddSiswa = (siswa: Siswa) => {
     setSiswaList(prev => [siswa, ...prev]);
   };
 
-  // Fungsi untuk mengupdate data siswa
   const handleUpdateSiswa = (siswa: Siswa) => {
     setSiswaList(prev =>
       prev.map(s => (s.id === siswa.id ? siswa : s))
     );
   };
 
-  // Fungsi untuk menghapus siswa
   const handleDeleteSiswa = (id: string) => {
     setSiswaList(prev => prev.filter(s => s.id !== id));
   };
@@ -80,7 +72,7 @@ const App: React.FC = () => {
       )}
 
       <h2>Daftar Siswa</h2>
-      <table border={1} cellPadding={5} cellSpacing={0} style={{ marginTop: 10, width: "100%" }}>
+      <table border={1} cellPadding={5} cellSpacing={0} style={{ marginTop: 10, width: '100%' }}>
         <thead>
           <tr>
             <th>NIS</th>
@@ -142,7 +134,6 @@ const StudentsForm: React.FC<StudentsFormProps> = ({
   const [email, setEmail] = useState<string>(formData.emailOrangTua || "");
   const [telepon, setTelepon] = useState<string>(formData.teleponOrangTua || "");
 
-  // Saat formData berubah (bisa dari edit), update state input
   useEffect(() => {
     setNis(formData.nis || "");
     setNama(formData.nama || "");
@@ -234,8 +225,4 @@ const StudentsForm: React.FC<StudentsFormProps> = ({
   );
 };
 
-export default App;
-
-    </div>
-  );
-}
+export default StudentsView;
