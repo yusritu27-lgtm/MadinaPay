@@ -20,7 +20,7 @@ const App: React.FC = () => {
       nama: "Budi",
       kelas: "XII IPA 1",
       angkatan: "2022",
-      tagihanSpp: 350000,
+      tagihanSpp: 200000,
       emailOrangTua: "budi@example.com",
       teleponOrangTua: "08123456789",
     },
